@@ -1,0 +1,91 @@
+Why Python ?
+- Free and Open Source
+- Easy to code and Easy to read as well as Easy To Debug : like english language with logic
+    example:
+        if 59 in range([0,99]):
+            print('number is inside the range')
+- Object-Oriented Language : Everything in python is object
+- High-Level Language : No need to worry about system architecture or memory management
+- Portable: will work on all the platform
+- Interpreted language
+- Big Community and Large number of libraries
+- Dynamically Typed Language: No need to specify the Types , python will handle this internally
+- Allocating Memory Dynamically :
+    example. my_number= 90
+
+Python Case: Snake Case, for class name camlecase
+
+
+
+Python Installation
+Website: https://www.python.org/downloads/
+- Follow the installation steps, set python path in environment if it is not added
+
+Using python in Console:
+1. Print 
+2. Variables and types
+3. Comments
+4. Arithmetic Operations
+5. String Operations
+6. List and Tuple Example
+7. _ magic in console
+8. 2D list wit examples
+
+Console Resu:
+E:\python_practice\python_prep>python
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello World")
+Hello World
+>>> print('Hello World')
+Hello World
+>>> print("'Hello World'")
+'Hello World'
+>>> print('"Hello World"')
+"Hello World"
+>>> 10+20
+30
+>>> 30-20
+10
+>>> 30*30
+900
+>>> 2**2
+4
+>>> 2**3
+8
+>>> 4/2
+2.0
+>>> 5/2
+2.5
+>>> 5//2
+2
+>>> 5%2
+1
+>>> x = 10
+>>> type(x)
+<class 'int'>
+>>> x= 10.2
+>>> type(x)
+<class 'float'>
+>>> x="hello"
+>>> type(x)
+<class 'str'>
+>>> "hello"*3
+'hellohellohello'
+>>> "hello"+2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> x=[1,2,3,4,5,"hello"]
+>>> type(x)
+<class 'list'>
+>>> x=(1,2)
+>>> type(x)
+<class 'tuple'>
+
+
+Reference Link:
+https://docs.python.org/3.9/tutorial/introduction.html#first-steps-towards-programming
+
+
+
