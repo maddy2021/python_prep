@@ -29,7 +29,21 @@ Using python in Console:
 5. String Operations
 6. List and Tuple Example
 7. _ magic in console
-8. 2D list wit examples
+8. List and indexes and slicing 
+
+Syntax of slicing
+x [ startIndex : EndIndex : Jump ]
+Default vlaues:
+startIndex = 0
+EndIndex  = length of list/string
+jump  = 1
+
+9. Reverse the string using slicing operation
+>>> x = "python"
+>>> x[-1::-1]
+"nohtyp"
+
+
 
 Console Resu:
 E:\python_practice\python_prep>python
@@ -82,6 +96,31 @@ TypeError: can only concatenate str (not "int") to str
 >>> x=(1,2)
 >>> type(x)
 <class 'tuple'>
+
+
+Reverse the string
+>>> x = "python"
+>>> x[-1::-1]
+"nohtyp"
+
+>>> x = "python is funny!!!"
+>>> x[0::4]
+'posn!'
+>>> x[0::-4]
+'p'
+>>> x[-1::-3]
+'!yusnt'
+>>> x[-1::-3]
+'!yusnt'
+>>> x[-1::-3]
+KeyboardInterrupt
+>>> x = "pythonisfunny!!!"
+>>> x[-1::-3]
+'!yuihp'
+>>> x[-1::-5]
+'!nnp'
+>>> x[-1::-5]
+
 
 
 Reference Link:
