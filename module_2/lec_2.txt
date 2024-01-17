@@ -37,3 +37,114 @@ index()	    Returns the index of the first element with the specified value
 reverse()	Reverses the order of the list
 sort()	    Sorts the list
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+---------------------------------------------------------------------
+Tuples
+-----------------------------------------------------------------
+- Its like list but it is immutable we can not change its value.
+
+- A tuple is created by placing all the items (elements) inside parentheses (), separated by commas. 
+  The parentheses are optional, however, it is a good practice to use them.
+
+my_tuple = (1,2,2, "hello", (1,2), 3.15, {x:6, y:8})  => any datatype is possible in tuple
+
+- immutable
+- can have duplicates
+- Ordered
+- Can contains items with different data types
+
+--------------------------------------------------------------------
+
+p_index      0        1        2       3
+My_tuple = ( 1   ,    2    ,   3   ,   4 )
+n_index     -4       -3       -2      -1   
+
+Tuple items can be access by the index like,
+
+x[1] will be 2.
+x[1] = 10 # Give Error because tuple is immutable datatype
+
+x[0:3] = (1,2,3)
+Slice operation will provide shallow copy of list and provide another tuple
+
+
+Single value tuple:
+# We will need a trailing comma to indicate that it is a tuple,
+var1 = ("Hello") # string
+var2 = ("Hello",) # tuple
+
+Advantages of Tuple over List in Python
+Since tuples are quite similar to lists, both of them are used in similar situations.
+
+However, there are certain advantages of implementing a tuple over a list:
+
+1. We generally use tuples for heterogeneous (different) data types and lists for homogeneous (similar) data types.
+2. Since tuples are immutable, iterating through a tuple is faster than with a list. So there is a slight performance boost.
+3. Tuples that contain immutable elements can be used as a key for a dictionary. With lists, this is not possible.
+4. If you have data that doesn't change, implementing it as tuple will guarantee that it remains write-protected.
+
+Methods:
+1. index
+2. count
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+---------------------------------------------------------------------
+Dictionary
+---------------------------------------------------------------------
+Dictionaries are used to store data values in key:value pairs.
+A dictionary is a collection which is changeable and do not allow duplicates.
+python 3.7 and version greater than it will provide ordered dictionary only
+
+Syntax: {}
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+Access Items from dictionary:
+
+1. Give year value from dictionary
+-> thisdict["year]
+
+2. Give brand of car
+-> thisdict["brand]
+
+
+Duplicate keys are not allowed and it wont give error but assign the last duplicate key value
+example:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 1966
+}
+
+Result:
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1966}
+
+
+We can assign any datatype in dictionary
+thisdict = {
+  "brand": "Maruti",
+  "electric": False,
+  "year": 2020,
+  "colors": ["blue", "white", "black"]
+}
+
+Methods:
+clear()	Removes all the elements from the dictionary
+get()	Returns the value of the specified key
+items()	Returns a list containing a tuple for each key value pair
+keys()	Returns a list containing the dictionary's keys
+pop()	Removes the element with the specified key
+popitem()	Removes the last inserted key-value pair
+update()	Updates the dictionary with the specified key-value pairs
+values()	Returns a list of all the values in the dictionary
+
+
+
+
