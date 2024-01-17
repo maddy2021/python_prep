@@ -1,0 +1,39 @@
+List
+-----------------------------------------------------------------
+Lists are used to store multiple items in a single variable.
+
+my_list = [1,2,2, "hello", (1,2), 3.15, {x:6, y:8}]  => any datatype is possible in list
+
+- Mutable
+- can have duplicates
+- Ordered
+- Can contains items with different data types
+
+--------------------------------------------------------------------
+
+p_index     0        1        2       3
+My_list = [ 1   ,    2    ,   3   ,   4 ]
+n_index    -4       -3       -2      -1   
+
+List items can be access by the index like,
+
+x[1] will be 2.
+x[1] = 10 #change value to 10
+
+x[0:3] = [1,2,3]
+Slice operation will provide shallow copy of list and provide another list
+
+-------------------------------------------------------------------
+List Operations:
+-------------------------------------------------------------------
+append()	Adds an element at the end of the list
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+insert()	Adds an element at the specified position
+clear()	    Removes all the elements from the list
+pop()	    Removes the element at the specified position
+remove()	Removes the item with the specified value
+count()	    Returns the number of elements with the specified value
+index()	    Returns the index of the first element with the specified value
+reverse()	Reverses the order of the list
+sort()	    Sorts the list
+
