@@ -90,6 +90,69 @@ Methods:
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+
+---------------------------------------------------------------------
+Sets
+---------------------------------------------------------------------
+Sets are used to store multiple items in a single variable.
+A set is a collection which is unordered, unchangeable*(immutable), and unindexed.
+
+Syntax: 
+{'a', 'b' , 'c'}  : anything inside {} 
+set(('a','b','c')) : this way also we can define set
+
+using set keyword we can convert list/tuple in set
+
+features:
+1. immutable
+2. Can not have duplicates
+3. Once set is created we can add or remove items in set but can not change it.
+
+
+Example:
+
+set1 = {1,2,5,6}
+set2 = {1,2,'hello','abc', [5,6,7]} 
+
+# set can not have duplicate items in it
+set3 = {1,2,2,3} => {1,2,3}
+
+
+Access Items in set:
+my_set = {"python" , "java" , "maths"}
+1. chceck java in the set 
+-> print("java" in my_set) => True
+
+More examples in sets.py file
+
+
+Methods:
+
+add()			Adds an element to the set
+clear()			Removes all the elements from the set
+copy()			Returns a copy of the set
+
+difference()		Returns a set containing the difference between two or more sets
+difference_update()	Removes the items in this set that are also included in another, specified set
+
+intersection()		Returns a set, that is the intersection of two other sets
+intersection_update()	Removes the items in this set that are not present in other, specified set(s)
+
+symmetric_difference()	Returns a set with the symmetric differences of two sets
+symmetric_difference_update()	inserts the symmetric differences from this set and another
+
+union()			Return a set containing the union of sets
+update()		Update the set with the union of this set and others
+
+pop()			Removes an element from the set
+remove()		Removes the specified element
+discard()		Remove the specified element
+
+isdisjoint()		Returns whether two sets have a intersection or not
+issubset()		Returns whether another set contains this set or not
+issuperset()		Returns whether this set contains another set or not
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ---------------------------------------------------------------------
 Dictionary
 ---------------------------------------------------------------------
