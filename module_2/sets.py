@@ -135,3 +135,9 @@ list1 = [1,2,2,3,4,5,5,2]
 list1_without_duplicate = list(set(list1)) #=> convert to set will remove duplicate and then convert to list
                                            # here order might change as set do not manage order of element
 print(list1_without_duplicate)             
+
+
+
+######## TASK ##########
+# Create two list and apply all the methods which we have learn
+# Create list of string which have duplicates and remove dumplicates using set.

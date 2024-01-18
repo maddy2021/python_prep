@@ -88,7 +88,7 @@ print(my_dict)
 
 # Delete dictionary
 del my_dict
-print(my_dict)  # it will give error as dict already deleted
+#print(my_dict)  # it will give error as dict already deleted
 # Traceback (most recent call last):
 #   File "E:\python_practice\python_prep\module_2\dict.py", line 65, in <module>
 #     print(my_dict)
@@ -97,7 +97,7 @@ print(my_dict)  # it will give error as dict already deleted
 
 
 # Nested Dict, dictionary inside dictionary 
-my_profile : {
+my_profile = {
     "name": "xyz",
     "phn_num" : 92472386467,
     "email_id" : "xyzgmail.com",
