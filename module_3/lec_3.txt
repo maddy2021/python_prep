@@ -1,0 +1,161 @@
+Conditional statements
+
+1. if else:
+=>  if {condition}:
+       logic if condition is True
+    else :
+       logic on False condtion
+
+Conditions:
+------------------------------------
+|Symbol | True Case  |  False Case |
+|-------|------------|-------------|                  
+|  >    |  20>10     |  10>20      |                 
+|-------|------------|-------------| 
+|  <    |  10<20     |  20<10      |                 
+|-------|------------|-------------|
+|  >=   |  15>=10    |  10>=15     |                 
+|-------|------------|-------------|
+|  <=   |  10<=15    |  15<=10     |                 
+|-------|------------|-------------|
+|  ==   |  10==10    |  9==10      |                 
+|-------|------------|-------------|
+|  !=   |  9!=10     |  10!=10     |                 
+------------------------------------
+      
+
+2. if elif else ladder : code block execution based on multiple conditions
+-> example
+number = 10
+
+if number>10:
+   print("above 10")
+elif number<10:
+   print("below 10")
+else:
+   print("its 10)
+
+3. Logical operator and its truth table
+
+a) "and" condition
+x and y both are conditions if both conditions are true then only it will execute block of code
+-----------------------
+*  x  |  y  | x and y *
+-----------------------
+|  T  |  T  |    T    |
+-----------------------
+|  T  |  F  |    F    |
+-----------------------
+|  F  |  T  |    F    |
+-----------------------
+|  F  |  F  |    F    |
+-----------------------
+
+b) "or" condition
+x and y both are conditions if any condition is true then it will execute block of code
+-----------------------
+*  x  |  y  | x or y *
+-----------------------
+|  T  |  T  |    T    |
+-----------------------
+|  T  |  F  |    T    |
+-----------------------
+|  F  |  T  |    T    |
+-----------------------
+|  F  |  F  |    F    |
+-----------------------
+
+c) not
+----------------
+*  x  | not(x) *
+----------------
+|  T  |   F    |
+----------------
+|  F  |   T    |
+----------------
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    
+
+--------------------------------------------------
+LOOPS
+--------------------------------------------------
+Looping means repeating something over and over until a particular condition is satisfied. 
+
+---------------------------------------------------------
+For loop:
+A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied. 
+Such a type of statement is also known as an iterative statement.
+
+example:
+definition : print 0 to 99
+
+for num in range(0,100):
+    print(num)
+----------------------------------------------------------
+
+While loop:
+
+example:
+definition print 0 to 99
+
+number = 0
+while number<100:
+    print(number)
+    number=number+1
+
+------------------------------------------------------------
+
+
+1. Iterate List/tuple using for loop
+
+=================================
+By index
+=================================
+list1= [10, 20, 3 , 4]
+
+for index in range(0,len(list1)):
+    print(index)
+    print(list1[index])
+
+
+=================================
+for each   list/set/tuple
+=================================
+list1= [10, 20, 3 , 4]
+
+for number in list1:
+    print(number)
+---------------------------------------
+2. Iterate dictionary key and values:
+dict1 = {
+    "name" : "xyz"
+    "phn_num" : "96789876" 
+}
+
+for key, value in dict1.items():
+    print(f"key: {key}  value:{value}")
+
+------------------------------------------
+
+Loops and conditions will go with each other to develop the logic
+
+====================================
+range function:
+====================================
+range function has same parameter like Slice
+The range() function returns a sequence of numbers, starting from 0 by default, 
+and increments by 1 (by default), and stops before a specified number.
+
+range(start, stop, step)
+
+example:
+1. 0 to 100 numbers using range
+-> range(0.100)
+
+2. create a list of first 100 numbers using range
+-> list1 = list(range(1,101))
+
+3. create tuple of first 100 numbers using range
+=> tup1 = tuple(range(1,101))
+
+    
