@@ -142,5 +142,3 @@ my_profile = {
 # remove landmrk
 # remove sub_details dictionary
 # remove "movies" from hobbies
-
-
