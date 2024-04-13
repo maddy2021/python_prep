@@ -95,6 +95,12 @@ for num in range(0,100):
 
 While loop:
 
+while condition:
+satisfied then loop the logic
+increment the variable
+if condition not satisfied stop the iterations
+
+
 example:
 definition print 0 to 99
 

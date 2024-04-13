@@ -1,0 +1,42 @@
+Functions
+---------------------------------------
+1) what is function:
+-> Pieace of code which you can reuse in your program whenevr needed.
+-> It takes user input and provide output based on logic witten inside it
+2) Function defination, declaration, calling
+-> def functionname(parameters):
+        logic part
+-> calling: 
+-> functionname(parameter)
+
+Example
+def hello(name):
+    print(f"hello {name}")
+
+hello(name="xyz")
+
+3) Functions with parameters
+4) functions with return values
+5) functions with default parameters
+
+Assignment:
+1) Create functions for area of circle and area of sqare
+2) write a function which take a list as parameter and return min and max numbr from the list
+3) write a function to return sqare of each element from the list
+ => l1 = [1,2,3,4]
+ => output = [1,4,9,16]
+4) take parameter as list:
+    input: [{name:"xyz", age:20}, {name:"pqr", age:30}]
+    output : ["xyz","pqr"]
+
+5) def fun1(*list)
+-> fun1([1,2,3,4,5])
+6) def fun1(**kwargs):
+-> fun1(name="xyz",age=20)
+
+
+
+lambda function: anonymous function
+
+lambda expression
+lamda function: expression

@@ -11,12 +11,12 @@ pattern 1:
 # Print pattern as above based on user input
 # suppose number is 5 then 5 lines should contains the pattern
 
-number = int(input("Rows for pattern: "))
+# number = int(input("Rows for pattern: "))
 
-for i in range(0,number):  # for rows
-    for j in range(0,i+1): # fow columns
-        print("*",end=" ") # for pattern print
-    print()                # for new lines 
+# for i in range(0,number):  # for rows
+#     for j in range(0,i+1): # fow columns
+#         print("*",end=" ") # for pattern print
+#     print()                # for new lines 
 
 # steps:
 # input number is 5
@@ -70,13 +70,23 @@ for i in range(0,number):  # for rows
 # 1 2 3 4
 # 1 2 3 4 5
 # ---------------
-# Solution
-# for i in range(0,number):
-#     for j in range(0,i+1):
-#         print(f"{j+1}",end=" ")
+# for row in range(5):
+#     for column in range(0,row+1):
+#         print(f"{column+1}",end=" ")
 #     print()
 
-    
+# 5
+# 5 4
+# 5 4 3
+# 5 4 3 2
+# 5 4 3 2 1
+
+# for row in range(5,0,-1):
+#     for column in range(5,row-1,-1):
+#         print(f"{column}",end=" ")
+#     print()
+
+
 # Assignment 2
 # pattern
 # -------------
